@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>lumiere plafond</title>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+  
+  </head>
+  <body>
+
+   <a-scene>
+  
+       <a-entity id="lumiere">
+           <a-box height="0.1" width="0.3" depth="0.015" color="#000000" rotation="90 0 0">
+               <a-cylinder height="0.25" radius="0.01" color="#000000" position="-0.111 0 -0.126" rotation="90 0 0">
+                   <a-sphere radius="0.05" color="#ffffff" position="0 -0.161 0" opacity="0.5">
+                       <a-entity rotation="-90 0 0" light="type: spot; angle: 45;intensity:0.125;"></a-entity>
+                   </a-sphere>
+               </a-cylinder>
+               <a-cylinder height="0.25" color="#000000" radius="0.01" position="0 0 -0.126" rotation="90 0 0">
+                    <a-sphere radius="0.05" color="#ffffff" position="0 -0.161 0" opacity="0.5">
+                        <a-entity rotation="-90 0 0" light="type: spot; angle: 45;intensity:0.125;"></a-entity>
+
+                   </a-sphere>
+
+               </a-cylinder>
+               <a-cylinder height="0.25" color="#000000" radius="0.01" position="0.111 0 -0.126" rotation="90 0 0">
+                    <a-sphere radius="0.05" color="#ffffff" position="0 -0.161 0" opacity="0.5">
+                        <a-entity rotation="-90 0 0" light="type: spot; angle: 45; intensity:0.125;"></a-entity>
+
+                   </a-sphere>
+
+               </a-cylinder>
+
+           </a-box>
+       </a-entity>
+       
+      </a-scene>
+  </body>
+</html>

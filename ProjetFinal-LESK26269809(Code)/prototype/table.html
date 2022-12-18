@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Table de cuisine</title>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+  
+  </head>
+  <body>
+
+   <a-scene>  
+       <a-assets>
+           <img id="tableTexture1" src="../images/tableTexture1.jpg">
+       </a-assets>
+       <a-entity id="table">
+           <a-box position="0 0 0" rotation="90 0 0" height="0.8128" width="1.1938" depth="0.0381" src="#tableTexture1" >
+           </a-box>
+           
+           <a-box position="0 -0.036 0.393" rotation="0 0 0" height="0.0381" width="1.1938" depth="0.0254" color="#000000" >
+           </a-box>
+           <a-box position="0 -0.036 -0.393" rotation="0 0 0" height="0.0381" width="1.1938" depth="0.0254" color="#000000" >
+           </a-box>
+           
+           <a-box position="-0.583 -0.036 -0.002" rotation="0 90 0" height="0.0381" width="0.813" depth="0.0254" color="#000000" >
+           </a-box>
+           <a-box position="0.583 -0.036 -0.002" rotation="0 90 0" height="0.0381" width="0.813" depth="0.0254" color="#000000" >
+           </a-box>
+           <!-- Pattes -->
+           <a-box position="-0.581 -0.344 0.387" rotation="0 0 0" height="0.7239" width="0.0128" depth="0.0254" color="#000000" >
+               <a-box position="0.007 0 0.006" rotation="0 90 0" height="0.7239" width="0.0128" depth="0.0254" color="#000000" >
+                </a-box>
+           </a-box>
+           
+           <a-box position="-0.581 -0.344 -0.387" rotation="0 -90 0" height="0.7239" width="0.0128" depth="0.0254" color="#000000" >
+               <a-box position="0.007 0 0.006" rotation="0 90 0" height="0.7239" width="0.0128" depth="0.0254" color="#000000" >
+                </a-box>
+           </a-box>
+           
+           <a-box position="0.576 -0.344 0.387" rotation="0 0 0" height="0.7239" width="0.0128" depth="0.0254" color="#000000" >
+               <a-box position="0.007 0 0.006" rotation="0 90 0" height="0.7239" width="0.0128" depth="0.0254" color="#000000" >
+                </a-box>
+           </a-box>
+           
+           <a-box position="0.576 -0.344 -0.387" rotation="0 -90 0" height="0.7239" width="0.0128" depth="0.0254" color="#000000" >
+               <a-box position="0.007 0 0.006" rotation="0 90 0" height="0.7239" width="0.0128" depth="0.0254" color="#000000" >
+                </a-box>
+           </a-box>
+           
+           
+       </a-entity>
+        
+       
+      </a-scene>
+  </body>
+</html>
